@@ -1,0 +1,8 @@
+{
+  "phpfmt.detect_indent": true,
+  "phpfmt.enable_auto_align": true,
+  "phpfmt.cakephp": true,
+  "phpfmt.psr1": true,
+  "phpfmt.psr1_naming": true,
+  "phpfmt.exclude": ["AddMissingCurlyBraces"]
+}

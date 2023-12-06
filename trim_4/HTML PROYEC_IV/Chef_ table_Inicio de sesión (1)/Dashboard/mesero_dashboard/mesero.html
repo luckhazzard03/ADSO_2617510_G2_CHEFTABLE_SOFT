@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <title>Inicio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="mesero.css" />
+  </head>
+
+  <body>
+    <input type="checkbox" id="nav-toggle" />
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h2>
+          <span class=""></span>
+          <span
+            ><img
+              src="img/LOGO CHEF TABLE2-02.png"
+              alt=""
+              width="180px"
+              height="90px"
+          /></span>
+        </h2>
+      </div>
+      <!--Secciones-del-tablero-->
+      <div class="sidebar-menu">
+        <ul>
+          <!--Inicio-->
+          <li>
+            <a href="mesero.html" class="active"
+              ><i class="fa-solid fa-house"></i
+              > <span>Inicio</span></a
+            >
+          </li>
+          <!--Administrador-->
+          <li>
+            <a href="mesero_admin.html"
+              ><i class="fa-regular fa-user"></i> <span>MESERO</span></a
+            >
+          </li>   
+          <!--Comanda-->          
+          <li>
+            <a href="comanda.html"
+              ><i class="fa-solid fa-file"></i></span>
+              <span> Comanda</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <h2>
+          <label for="nav-toggle">
+            <span class="las la-bars"><i class="fa-solid fa-house"></i></span>
+          </label>
+          Inicio
+        </h2>
+
+        <div class="search-wrapper">
+          <span class="las la-search"
+            ><i class="fa-solid fa-magnifying-glass" style="color: #141b2f;"></i
+          ></span>
+          <input type="search" placeholder="Buscar aquí" />
+        </div>
+        <div class="user-wrapper">
+          <img
+            src="img/pexels-filip-rankovic-grobgaard-12276390.jpg"
+            width="40px"
+            height="55px"
+            alt=""
+          />
+          <div>
+            <h4>MESERO</h4>
+            <small>Rol mesero</small>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="cards">
+          
+          <div class="card-single">
+            <div>
+              <h1>50</h1>
+              <span>Productos creados</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-upload" style="color: #141b2f;"></i>
+            </div>
+          </div>
+
+          <div class="card-single">
+            <div>
+              <h1>15</h1>
+              <span>Productos faltantes</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-arrow-down" style="color: #141b2f;"></i>
+            </div>
+          </div>
+
+          <div class="card-single">
+            <div>
+              <h1>0</h1>
+              <span>Comandas registradas</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bars-progress" style="color: #ffffff;"></i>
+            </div>
+          </div>
+        </div>
+        <!--Tabla-->
+        <div class="recent-grid">
+          
+        <!--contenedor USUARIOS LATERAL DERECHO-->  
+          <div class="customers">
+            <div class="card">
+              <div class="card-header">
+                <h3>USUARIOS</h3>
+
+                <button>
+                  <a href="inicio_sesion.html">Cerrar Sesión <span class="las la-arrow-right"></span></a>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <div class="customer">
+                  <div class="info">
+                    <img
+                      src="img/pexels-cottonbro-studio-4057693.jpg"
+                      width="40px"
+                      height="55px"
+                      alt=""
+                    />
+                    <div>
+                      <h4>Cecilia Rojas</h4>
+                      <small>Administrador</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="lab la-whatsapp"></span>
+                    
+                  </div>
+                </div>
+
+                <div class="customer">
+                  <div class="info">
+                    <img
+                      src="img/pexels-miquel-ferran-gomez-figueroa-3814446.jpg"
+                      width="40px "
+                      height="55px "
+                      alt=" "
+                    />
+                    <div>
+                      <h4>Carlos Roa</h4>
+                      <small>Chef</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="lab la-whatsapp"></span>
+                    <span class="las la-phone"></span>
+                  </div>
+                </div>
+
+                <div class="customer">
+                  <div class="info">
+                    <img
+                      src="img/pexels-filip-rankovic-grobgaard-12276390.jpg"
+                      width="40px "
+                      height="55px "
+                      alt=" "
+                    />
+                    <div>
+                      <h4>Andres Perez</h4>
+                      <small>Mesero</small>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <span class="las la-user-circle"></span>
+                    <span class="lab la-whatsapp"></span>
+                    <span class="las la-phone"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

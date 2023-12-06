@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles1.css" />
+    <title>Clientes</title>
+  </head>
+  <body>
+    <div class="container1">
+      <h1>CLIENTES</h1>
+      <form action="insertar.php" method="POST">
+        <div class="form-container2">
+          <label for="identificacion">Identificacion:</label>
+          <input type="text" name="identificacion" required /><br /><br />
+          <label for="nombres">Nombres:</label>
+          <input type="text" name="nombres" required /><br /><br />
+          <label for="sexo">Sexo:</label>
+          <input type="text" name="sexo" required /><br /><br />
+          <label for="direccion">Direccion:</label>
+          <input type="text" name="direccion" required /><br /><br />
+          <label for="correo">Correo:</label>
+          <input type="email" name="correo" required /><br /><br />
+          <label for="fecha_nac">Fecha de Nacimiento:</label>
+          <input type="date" name="fecha_nac" required /><br /><br />
+          <label for="movil">Movil:</label>
+          <input type="text" name="movil" required /><br /><br />
+          <label for="edad">Edad:</label>
+          <input type="number" name="edad" required /><br /><br />
+          <input type="submit" value="Registrar" />
+        </div>
+      </form>
+    </div>
+
+    <div class="container3">
+      <h2>LISTADO DE CLIENTES</h2>
+      <?php include 'listar.php'; ?>
+      <form action="borrar.php" method="POST">
+        <div class="form-container4">
+          <label for="id_borrar">ID del cliente a borrar:</label>
+          <input type="number" name="id_borrar" required /><br /><br />
+          <input type="submit" value="Borrar" />
+        </div>
+      </form>
+    </div>
+
+    <div class="container5">
+      <form action="eliminar.php" method="POST">
+        <div class="form-container6">
+          <label for="id_eliminar">ID del cliente a eliminar:</label>
+          <input type="number" name="id_eliminar" required /><br /><br />
+          <input type="submit" value="Eliminar" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

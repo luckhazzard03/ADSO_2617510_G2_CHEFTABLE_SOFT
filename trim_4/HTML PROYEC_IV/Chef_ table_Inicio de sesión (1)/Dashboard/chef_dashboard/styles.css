@@ -1,0 +1,200 @@
+/*margenes por defecto del navegador*/
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+/*tamaño imagen de la pagina inicio de sesión*/
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(img/pexels-elle-hughes-2696064.jpg);
+  background-size: cover;
+}
+/*margenes contenedor formulario*/
+.container-form {
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  max-width: 900px;
+  transition: all is ease;
+  margin: 10px;
+}
+/*clase information parte izquierda "Bienvenido centrar el contenedor*/
+.information {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #7bb92af3;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+/*contenedor parte izquierda de la clase info-childs dar margenes"bienvenido"*/
+.info-childs {
+  width: 100%;
+  padding: 0 30px;
+}
+/*contenedor de la clase info-childs"bienvenido" dar margenes del h2*/
+.info-childs h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+/*contenedor parte izquierda de la clase info-childs"bienvenido" dar margenes del <p>*/
+.info-childs p {
+  margin: 15px;
+  color: #151515;
+}
+/*contenedor parte izquierda de la clase info-childs"bienvenido" personalizar boton*/
+.info-childs input {
+  background-color: transparent;
+  outline: none;
+  border: solid 2px #23233b;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #23233b;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/*contenedor parte izquierda de la clase info-childs "bienvenido"input color y borde del boton*/
+.info-childs input:hover {
+  background-color: #23233b;
+  border: none;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/*contenedor parte derecha "crear cuenta" alinear y centrar*/
+.form-information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
+  background-color: #f8f8f8de;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+/*contenedor parte derecha "crear cuenta" margenes*/
+.form-information-childs {
+  padding: 0 30px;
+}
+/*contenedor parte derecha "crear cuenta" h2*/
+.form-information-childs h2 {
+  color: #333;
+  font-size: 2rem;
+}
+/*contenedor parte derecha "crear cuenta" etiqueta <p>*/
+.form-information-childs p {
+  color: #555;
+}
+/*clase iconos margenes*/
+.icons {
+  margin: 15px 0;
+}
+/*clase iconos personalizar cada uno*/
+.icons i {
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: #23233b;
+  border: solid thin #23233b;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/*seudoclase hover iconos*/
+.icons i:hover {
+  background-color: #7bb92af3;
+  color: #ffffff;
+}
+/*texto margen*/
+.form {
+  margin: 30px 0 0 0;
+}
+/*label personalizado y margenes de ingresar datos*/
+.form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  padding: 0 10px;
+  background-color: #fff;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/*input abarca el 100% del label*/
+.form label input {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #333;
+}
+/*bajar color de iconos*/
+.form label i {
+  color: #a7a7a7;
+}
+/*Acceder al boton de registrarse*/
+.form input[type="button"] {
+  background-color: #23233b;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/*efecto para el boton*/
+.form input[type="button"]:hover {
+  background-color: #a7a7a7;
+}
+/*esta clase es para utilizar desde JAVA SCRIPT para añadir
+o quitar formulario y que tenga una trancisión entre los dos fromularios */
+.hide {
+  /*nuestro formulario se encuentra detras del primer contenedor*/
+  position: absolute;
+  /*para ocultar el formulario en la parte de arriba en el "top"*/
+  transform: translateY(-300%);
+}
+/*RESPONSIVE FORM cuando la pantalla sea de 750px*/
+@media screen and (max-width: 750px) {
+  html {
+    /*se hace por lo rem de cada texto */
+    font-size: 12px;
+  }
+}
+/*RESPONSIVE FORM cuando la pantalla sea de 580px*/
+@media screen and (max-width: 580px) {
+  html {
+    /*se hace por lo rem de cada texto */
+    font-size: 10px;
+  }
+  /*para que aparezca en columnas */
+  .container-form {
+    height: auto;
+    flex-direction: column;
+  }
+  /*para alterar el ancho */
+  .information {
+    width: 100%;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  /*para que abarque */
+  .form-information {
+    width: 100%;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+  }
+}
